@@ -1,0 +1,136 @@
+.weather-info-box,
+.favourites-box {
+  text-align: left;
+  padding-bottom: 50px;
+  background: #393232;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.weather-info-box.hot {
+  background: #cf2b00;
+  color: black; /* Black text */
+}
+
+.weather-info-box.cool {
+  background: rgb(57, 50, 50);
+  color: white; /* White text */
+}
+
+.weather-info-box p {
+  margin: 5px 0;
+}
+
+.weather-info-box button {
+  padding: 10px;
+  cursor: pointer;
+  background: gray;
+  color: white;
+  border-radius: 4px;
+}
+
+.weather-info-data {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.weather-info-data.hot {
+  border-bottom: 4px solid black; 
+}
+
+.weather-info-data.cool {
+  border-bottom: 4px solid white;
+}
+
+.weather-info-data > * {
+  flex: 0 0 50%;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.temp {
+  letter-spacing: -3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 180px;
+  line-height: 1;
+}
+
+.favourite-button {
+  padding-top: 20px;
+}
+
+.weather-info-box.hot .weather-info-data,
+.weather-info-box.hot h2,
+.weather-info-box.hot h3,
+.weather-info-box.hot h4,
+.weather-info-box.hot .temp,
+.weather-info-box.hot .favourite-button button {
+  color: black;
+  border-bottom-color: black;
+}
+
+.weather-info-box.cool .weather-info-data,
+.weather-info-box.cool h2,
+.weather-info-box.cool h3,
+.weather-info-box.cool h4,
+.weather-info-box.cool .temp,
+.weather-info-box.cool .favourite-button button {
+  color: white;
+  border-bottom-color: white;
+}
+.hourly-forecast {
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.hourly-forecast.hot {
+  background-color: #cf2b00; 
+  color: black; 
+}
+
+.hourly-forecast.cool {
+  background-color: #393232; 
+  color: white; 
+}
+
+.hour {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.hour-time,
+.hour-condition,
+.hour-precipitation,
+.hour-temp {
+  grid-column: span 1;
+}
+
+.hour-time {
+  text-align: left;
+}
+
+.hour-condition {
+  text-align: center;
+}
+
+.hour-precipitation {
+  text-align: center;
+}
+
+.hour-temp {
+  text-align: right;
+}
+
+.hour p {
+  margin: 5px 0;
+}

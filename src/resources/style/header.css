@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  margin-right:auto;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-container input {
+  padding: 10px;
+  margin-right: 8px;
+  border-radius: 8px;
+  color: black;
+}
+
+.search-container button {
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+}

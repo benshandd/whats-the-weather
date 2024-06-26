@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "NeoGramBold";
+  src: url("../fonts/NeoGramBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NeoGramDemiBold";
+  src: url("../fonts/NeoGramDemiBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "NeoGram", sans-serif;
+}
+
+.App {
+  font-family: "NeoGramBold", sans-serif;
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  padding-right: 50px;
+  flex-direction: column; 
+}
