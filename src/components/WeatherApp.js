@@ -92,7 +92,7 @@ const WeatherApp = () => {
           <FontAwesomeIcon icon="fa-bars" />
         </button>
         <div className="logo">
-          <h1>Weather App☁️</h1>
+          <h1>whats-the-weather</h1>
         </div>
         <SearchBar
           search={search}
